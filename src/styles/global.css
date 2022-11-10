@@ -1,0 +1,37 @@
+:root {
+  --color-primary: #0f172a;
+  --color-secondary: #6b21a8;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;  
+}
+.logos-small {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .logos-small {
+    display: block;
+    margin: auto;
+  }
+  .logos {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  *{
+    text-align: center;
+  }
+}
